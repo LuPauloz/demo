@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  pg-tasks:
+    container_name: pg-tasks
+    image: postgres
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_BD=tasks
+      - POSTGRES_PASSWORD=password
