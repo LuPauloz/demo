@@ -30,3 +30,7 @@ build/
 ### VS Code ###
 .vscode/
 **/.DS_Store
+
+
+### Docker ###
+/docker/jenkins_home

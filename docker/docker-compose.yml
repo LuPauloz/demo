@@ -9,3 +9,14 @@ services:
     environment:
       - POSTGRES_DB=tasks
       - POSTGRES_PASSWORD=password
+
+  jenkins-tasks:
+    container_name: jenkins-tasks
+    image: jenkins/jenkins:lts-jdk8
+    ports:
+      - 8080:8080
+      - 50000:50000
+    restart: on-failure
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+
