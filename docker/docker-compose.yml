@@ -3,7 +3,7 @@ version: "3"
 services:
   pg-tasks:
     container_name: pg-tasks
-    image: postgres
+    image: postgres:9
     ports:
       - 5433:5432
     environment:
